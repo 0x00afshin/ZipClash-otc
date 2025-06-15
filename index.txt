@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZipClash: Private OTC Sale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+        .hero-bg {
+            background-color: #111;
+            background-image: radial-gradient(circle at top right, rgba(29, 78, 216, 0.15), transparent 40%),
+                              radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.15), transparent 50%);
+        }
+        .glass-card {
+            background: rgba(23, 23, 23, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3), 0 4px 6px -4px rgba(59, 130, 246, 0.3);
+        }
+        .partner-logo {
+            transition: all 0.3s ease;
+            filter: grayscale(100%) brightness(0.8);
+        }
+        .partner-logo:hover {
+            filter: grayscale(0%) brightness(1);
+            transform: scale(1.05);
+        }
+        .roadmap-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #1e293b;
+            border: 3px solid #3b82f6;
+        }
+        .roadmap-line {
+            position: absolute;
+            left: -21px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #1e293b;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-30 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">ZipClash</h1>
+            <a href="#contact" class="hidden md:inline-block bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg cta-button">
+                Request Deal Terms
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-bg min-h-screen flex items-center pt-24 pb-10">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl md:text-6xl font-black text-white leading-tight mb-4">
+                        ZipClash: Private Sale for Strategic Partners
+                    </h2>
+                    <p class="text-lg md:text-xl text-neutral-300 mb-8">
+                        The next-gen competitive mobile battler where skill determines victory, built on a sustainable player-owned economy.
+                    </p>
+                    <div class="mb-8 w-full max-w-3xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-blue-500/20 border-2 border-blue-500/50">
+                        <!-- Visueel Element: Vervang de src met je gameplay trailer -->
+                        <video class="w-full h-full object-cover" src="https://placehold.co/1280x720/000000/FFFFFF/video.mp4" autoplay loop muted playsinline poster="https://placehold.co/1280x720/0a0a0a/e5e5e5?text=ZipClash+Gameplay">
+                            Je browser ondersteunt de video tag niet.
+                        </video>
+                    </div>
+                    <a href="#contact" class="inline-block bg-blue-600 text-white font-bold text-lg px-10 py-4 rounded-lg cta-button">
+                        Request Deal Terms
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Traction Section -->
+        <section id="traction" class="py-16 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="glass-card p-8 max-w-2xl mx-auto text-center">
+                    <h3 class="text-xl font-semibold text-blue-400 mb-2">Proven On-Chain Traction</h3>
+                    <p class="text-4xl font-black text-white">Top 90 Game Worldwide</p>
+                    <p class="text-neutral-400 mt-1">according to DappRadar</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem & Solution Section -->
+        <section id="solution" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">The GameFi market is saturated. We're different.</h3>
+                    <p class="text-neutral-400 mt-2 max-w-2xl mx-auto">Too many projects have focused on earning over gameplay, resulting in unsustainable economies and worthless assets.</p>
+                </div>
+                <div class="glass-card p-8 md:p-12">
+                    <h4 class="text-2xl md:text-3xl font-bold text-center text-blue-400 mb-8">ZipClash is built to change that.</h4>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto bg-blue-900/50 border border-blue-500/50 rounded-full flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                            </div>
+                            <h5 class="text-xl font-bold text-white mb-2">Skill-First Gameplay</h5>
+                            <p class="text-neutral-400">Success is determined by strategy in fast-paced battles, not by who has the most expensive assets.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto bg-blue-900/50 border border-blue-500/50 rounded-full flex items-center justify-center mb-4">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h5 class="text-xl font-bold text-white mb-2">Real-World Rewards</h5>
+                            <p class="text-neutral-400">With one click, players can convert their earned $ZIP tokens into Uber Eats gift cards for instant utility.</p>
+                        </div>
+                        <div class="text-center">
+                             <div class="w-16 h-16 mx-auto bg-blue-900/50 border border-blue-500/50 rounded-full flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                            </div>
+                            <h5 class="text-xl font-bold text-white mb-2">True Asset Ownership</h5>
+                            <p class="text-neutral-400">Powered by Immutable X, all in-game assets are NFTs truly owned by players, tradable gas-free.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto bg-blue-900/50 border border-blue-500/50 rounded-full flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+                            </div>
+                            <h5 class="text-xl font-bold text-white mb-2">Proven Track Record</h5>
+                            <p class="text-neutral-400">Developed by ZipLabz, the studio behind successful titles Street Cafe and Idle City Tycoon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Opportunity Section -->
+        <section id="opportunity" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">OTC Sale – Key Terms</h3>
+                    <p class="text-neutral-400 mt-2 max-w-2xl mx-auto">This private OTC round offers a unique opportunity to become a foundational partner in the ZipClash ecosystem before our public launch.</p>
+                </div>
+                <div class="glass-card max-w-4xl mx-auto overflow-hidden">
+                    <div class="p-8">
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="border-b border-neutral-800">
+                                    <td class="py-4 font-semibold text-neutral-300">Token</td>
+                                    <td class="py-4 text-white text-right font-mono">$ZIP (ERC-20)</td>
+                                </tr>
+                                <tr class="border-b border-neutral-800">
+                                    <td class="py-4 font-semibold text-neutral-300">Total Supply</td>
+                                    <td class="py-4 text-white text-right font-mono">10,000,000,000</td>
+                                </tr>
+                                <tr class="border-b border-neutral-800">
+                                    <td class="py-4 font-semibold text-neutral-300">OTC Allocation</td>
+                                    <td class="py-4 text-white text-right font-mono">285,000,000 (2.85%)</td>
+                                </tr>
+                                <tr class="border-b border-neutral-800">
+                                    <td class="py-4 font-semibold text-neutral-300">Raise Target</td>
+                                    <td class="py-4 text-white text-right font-mono">€300,000 (USDC)</td>
+                                </tr>
+                                <tr class="border-b border-neutral-800">
+                                    <td class="py-4 font-semibold text-neutral-300">OTC Price</td>
+                                    <td class="py-4 text-white text-right font-mono">$0.00105 / ZIP</td>
+                                </tr>
+                                <tr class="border-b border-neutral-800">
+                                    <td class="py-4 font-semibold text-neutral-300">Discount</td>
+                                    <td class="py-4 text-white text-right font-mono">≈ 65% discount to TGE</td>
+                                </tr>
+                                <tr class="border-b border-neutral-800">
+                                    <td class="py-4 font-semibold text-neutral-300">Vesting Period</td>
+                                    <td class="py-4 text-white text-right font-mono">No lock-up, 6-month linear vesting</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 font-semibold text-neutral-300">Accepted Currencies</td>
+                                    <td class="py-4 text-white text-right font-mono">USDC</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tokenomics & Use of Funds Section -->
+        <section id="tokenomics" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-center">
+                        <h4 class="text-2xl font-bold text-white mb-6">Token Distribution</h4>
+                        <div class="relative w-full max-w-sm mx-auto">
+                            <svg viewBox="0 0 100 100" class="w-full h-auto">
+                                <circle cx="50" cy="50" r="45" fill="transparent" stroke="#1e293b" stroke-width="10"></circle>
+                                <!-- Team: 14% -->
+                                <circle cx="50" cy="50" r="45" fill="transparent" stroke="#3b82f6" stroke-width="10" stroke-dasharray="39.58 282.74" stroke-dashoffset="0"></circle>
+                                <!-- OTC Sale: 2.85% -->
+                                <circle cx="50" cy="50" r="45" fill="transparent" stroke="#8b5cf6" stroke-width="10" stroke-dasharray="8.06 282.74" stroke-dashoffset="-39.58"></circle>
+                                <!-- Community/P2E: 40% -->
+                                <circle cx="50" cy="50" r="45" fill="transparent" stroke="#10b981" stroke-width="10" stroke-dasharray="113.1 282.74" stroke-dashoffset="-47.64"></circle>
+                                <!-- Liquidity: 10% -->
+                                <circle cx="50" cy="50" r="45" fill="transparent" stroke="#f59e0b" stroke-width="10" stroke-dasharray="28.27 282.74" stroke-dashoffset="-160.74"></circle>
+                                 <!-- Reserves: 33.15% -->
+                                <circle cx="50" cy="50" r="45" fill="transparent" stroke="#ef4444" stroke-width="10" stroke-dasharray="93.75 282.74" stroke-dashoffset="-189.01"></circle>
+                            </svg>
+                             <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                <span class="text-3xl font-bold text-white">10B</span>
+                                <span class="text-neutral-400">Total Supply</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-neutral-300">
+                           <span class="flex items-center"><span class="w-3 h-3 rounded-full bg-blue-500 mr-2"></span>Team: 14%</span>
+                           <span class="flex items-center"><span class="w-3 h-3 rounded-full bg-purple-500 mr-2"></span>OTC: 2.85%</span>
+                           <span class="flex items-center"><span class="w-3 h-3 rounded-full bg-emerald-500 mr-2"></span>Community/P2E: 40%</span>
+                           <span class="flex items-center"><span class="w-3 h-3 rounded-full bg-amber-500 mr-2"></span>Liquidity: 10%</span>
+                           <span class="flex items-center"><span class="w-3 h-3 rounded-full bg-red-500 mr-2"></span>Reserves: 33.15%</span>
+                        </div>
+                    </div>
+                     <div class="text-center">
+                        <h4 class="text-2xl font-bold text-white mb-6">Use of Funds</h4>
+                        <div class="relative w-full max-w-sm mx-auto">
+                            <svg viewBox="0 0 100 100" class="w-full h-auto">
+                                <circle cx="50" cy="50" r="45" fill="transparent" stroke="#1e293b" stroke-width="10"></circle>
+                                <!-- Development: 50% -->
+                                <circle cx="50" cy="50" r="45" fill="transparent" stroke="#3b82f6" stroke-width="10" stroke-dasharray="141.37 282.74" stroke-dashoffset="0"></circle>
+                                <!-- Marketing: 25% -->
+                                <circle cx="50" cy="50" r="45" fill="transparent" stroke="#8b5cf6" stroke-width="10" stroke-dasharray="70.68 282.74" stroke-dashoffset="-141.37"></circle>
+                                <!-- Partnerships/Liquidity: 15% -->
+                                <circle cx="50" cy="50" r="45" fill="transparent" stroke="#10b981" stroke-width="10" stroke-dasharray="42.41 282.74" stroke-dashoffset="-212.05"></circle>
+                                <!-- Operations: 10% -->
+                                <circle cx="50" cy="50" r="45" fill="transparent" stroke="#f59e0b" stroke-width="10" stroke-dasharray="28.27 282.74" stroke-dashoffset="-254.46"></circle>
+                            </svg>
+                            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                <span class="text-3xl font-bold text-white">100%</span>
+                                <span class="text-neutral-400">Allocation</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-neutral-300">
+                           <span class="flex items-center"><span class="w-3 h-3 rounded-full bg-blue-500 mr-2"></span>Development: 50%</span>
+                           <span class="flex items-center"><span class="w-3 h-3 rounded-full bg-purple-500 mr-2"></span>Marketing: 25%</span>
+                           <span class="flex items-center"><span class="w-3 h-3 rounded-full bg-emerald-500 mr-2"></span>Partnerships: 15%</span>
+                           <span class="flex items-center"><span class="w-3 h-3 rounded-full bg-amber-500 mr-2"></span>Operations: 10%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team & Partners Section -->
+        <section id="team" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">Team & Backers</h3>
+                    <p class="text-neutral-400 mt-2 max-w-2xl mx-auto">We are a dedicated team of gaming veterans from Amsterdam, Netherlands, with a passion for building fun and sustainable virtual worlds.</p>
+                </div>
+                 <div class="text-center mb-16">
+                     <h4 class="text-2xl font-bold text-white mb-8">Ecosystem & Exchange Partners</h4>
+                     <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
+                        <img src="https://seeklogo.com/images/I/immutable-x-imx-logo-E734F62A4B-seeklogo.com.png" alt="Immutable X Logo" class="h-12 md:h-16 partner-logo" onerror="this.onerror=null;this.src='https://placehold.co/200x64/0a0a0a/FFFFFF?text=Immutable+X';">
+                        <img src="https://www.gate.io/images/gateio_logo.svg?v=2" alt="Gate.io Logo" class="h-8 md:h-10 partner-logo" onerror="this.onerror=null;this.src='https://placehold.co/200x64/0a0a0a/FFFFFF?text=Gate.io';">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/MEXC_Global_logo.svg/2560px-MEXC_Global_logo.svg.png" alt="MEXC Logo" class="h-10 md:h-12 partner-logo" onerror="this.onerror=null;this.src='https://placehold.co/200x64/0a0a0a/FFFFFF?text=MEXC';">
+                        <img src="https://onbeam.com/wp-content/themes/beam/assets/img/logo-dark.svg" alt="BEAM Logo" class="h-8 md:h-10 partner-logo" onerror="this.onerror=null;this.src='https://placehold.co/200x64/0a0a0a/FFFFFF?text=BEAM';">
+                     </div>
+                      <p class="text-neutral-400 mt-6 max-w-xl mx-auto">Supported by industry leaders and 13+ other guild and tech partners.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Section -->
+        <section id="roadmap" class="py-20">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-16">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">Roadmap</h3>
+                    <p class="text-neutral-400 mt-2 max-w-2xl mx-auto">We have a clear and ambitious vision for the future of ZipClash.</p>
+                </div>
+                <div class="max-w-3xl mx-auto relative pl-8">
+                    <div class="roadmap-line"></div>
+                    <div class="mb-12 relative roadmap-item">
+                        <h5 class="text-xl font-bold text-blue-400">Q2 2025</h5>
+                        <p class="text-white">Successful closure of OTC fundraising round & team expansion.</p>
+                    </div>
+                    <div class="mb-12 relative roadmap-item">
+                        <h5 class="text-xl font-bold text-blue-400">Q3 2025</h5>
+                        <p class="text-white">Alpha launch for early investors and key community members.</p>
+                    </div>
+                    <div class="mb-12 relative roadmap-item">
+                        <h5 class="text-xl font-bold text-blue-400">Q4 2025</h5>
+                        <p class="text-white">Public Beta launch with integrated NFT marketplace on Immutable X.</p>
+                    </div>
+                    <div class="mb-12 relative roadmap-item">
+                        <h5 class="text-xl font-bold text-blue-400">Q1 2026</h5>
+                        <p class="text-white">Global public launch on iOS & Android App Stores and TGE on Gate.io & MEXC.</p>
+                    </div>
+                     <div class="mb-12 relative roadmap-item">
+                        <h5 class="text-xl font-bold text-blue-400">Q2 2026</h5>
+                        <p class="text-white">First major content update: New 'Clashers', arenas, and special events.</p>
+                    </div>
+                     <div class="relative roadmap-item">
+                        <h5 class="text-xl font-bold text-blue-400">Q3 2026</h5>
+                        <p class="text-white">Introduction of competitive seasons, clan battles, and social features.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="glass-card max-w-3xl mx-auto p-8 md:p-12 text-center">
+                     <h3 class="text-3xl font-bold text-white mb-2">Request Deal Terms</h3>
+                     <p class="text-neutral-400 mb-8">Express your interest to receive the full investment memorandum and to schedule a call with the founding team.</p>
+                     <form id="contact-form">
+                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                             <input type="text" placeholder="Your Name" id="name" class="w-full bg-neutral-900 border border-neutral-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                             <input type="email" placeholder="Email Address" id="email" class="w-full bg-neutral-900 border border-neutral-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                         </div>
+                         <div class="mb-6">
+                             <input type="text" placeholder="Organization / Fund (Optional)" id="organization" class="w-full bg-neutral-900 border border-neutral-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                         </div>
+                         <div class="mb-6">
+                            <textarea placeholder="Your Message (Optional)" id="message" rows="4" class="w-full bg-neutral-900 border border-neutral-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                         </div>
+                         <button type="submit" class="w-full bg-blue-600 text-white font-bold text-lg px-10 py-4 rounded-lg cta-button">Submit Interest</button>
+                     </form>
+                      <div id="form-success" class="hidden mt-4 text-emerald-400">Bedankt! We nemen spoedig contact met u op.</div>
+                     <div class="mt-8 text-neutral-400">
+                         <p>For direct inquiries:</p>
+                         <p class="font-semibold text-white mt-1">[investors@zipclash.com]</p>
+                     </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8">
+        <div class="container mx-auto px-6 text-center text-neutral-500">
+            <p>&copy; 2025 ZipLabz B.V. All Rights Reserved.</p>
+            <p class="text-sm mt-2">This is not an offer to sell securities. Participation in the OTC sale is subject to KYC/AML verification and is not available to residents of restricted jurisdictions.</p>
+        </div>
+    </footer>
+    <script>
+        // Simple form submission handler to show a success message
+        const form = document.getElementById('contact-form');
+        const successMessage = document.getElementById('form-success');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real application, you would send this data to a server.
+            // For this demo, we'll just show the success message.
+            form.style.display = 'none';
+            successMessage.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
